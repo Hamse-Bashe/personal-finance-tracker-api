@@ -12,11 +12,10 @@ const options = {
     },
     servers: [
       {
-        // url:
-        //   process.env.NODE_ENV == "developmentt"
-        //     ? "http://localhost:3000"
-        //     : "https://task-manager-api-05w1.onrender.com/"
-        url: "http://localhost:5000"
+        url:
+          process.env.NODE_ENV == "development"
+            ? "http://localhost:5000"
+            : "https://personal-finance-tracker-api-zcu5.onrender.com",
       },
     ],
     components: {
